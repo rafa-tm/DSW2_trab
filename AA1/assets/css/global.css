@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* fonts */
+  --font-roboto: Roboto;
+
+  /* Colors */
+  --background: #f1faee;
+  --primary-100: #a8dadc;
+  --primary-200: #457b9d;
+  --primary-300: #1d3557;
+  --white: #fff;
+  --secondary: #e63946;
+
+  /* Define a relação de tamanho de fonte para 10px ao invés de 16px*/
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
