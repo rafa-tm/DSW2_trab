@@ -20,6 +20,7 @@
   font-size: 62.5%;
 }
 
-body {
+body, header{
+  font-family: var(--font-roboto);
   font-size: 1.6rem;
 }
