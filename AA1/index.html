@@ -4,15 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>LifeCare</title>
+
   <link rel="icon" type="svg" href="./assets/images/Simbolo.svg" />
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/global.css" />
-  <link rel="stylesheet" href="./assets/css/index.css" />
   <link rel="stylesheet" href="./assets/css/components/header.css" />
   <link rel="stylesheet" href="./assets/css/components/buttons.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
 </head>
 
 <body>
@@ -20,25 +19,27 @@
   <header class="header">
     <img src="./assets/images/Logotipo.svg" alt="Logotipo LifeCare" />
     <div class="header__options header__options-show">
-      <button class="button-ternary anchor">Como Funciona</button>
-      <button class="button-ternary anchor">Especialidades</button>
-      <button class="button-primary">Entrar ou Cadastrar</button>
+      <a href="#section2"><button class="button-ternary anchor">Como Funciona</button></a>
+      <a href="#section3"><button class="button-ternary anchor">Especialidades</button></a>
+      <a href="/login.html"><button class="button-primary">Entrar ou Cadastrar</button></a>
     </div>
   </header>
 
   <!-- Sessão 1 -->
-  <section class="wrapper_session1">
+  <section class="wrapper_section1">
     <div class="wrapper__call">
       <h2>Agende sua consulta agora mesmo!</h2>
-      <p>Em nosso sistema você encontra uma infinidade de profissionais de diversas áreas e especialidades para que você
-        o melhor cuidado.</p>
+      <p>
+        Em nosso sistema você encontra uma infinidade de profissionais de
+        diversas áreas e especialidades para que você o melhor cuidado.
+      </p>
       <button class="button-primary">Ver especialidades</button>
     </div>
-    <img src="./assets/images/Doctors_amico.svg" alt="Ilustração de três profissionais">
+    <img src="./assets/images/Doctors_amico.svg" alt="Ilustração de três profissionais" />
   </section>
 
   <!-- Sessão 2 -->
-  <section class="wrapper_session2">
+  <section class="wrapper_section2" id="section2">
     <div class="wrapper__titulo">
       <h1>Como funciona?</h1>
       <h4>Muito simples.</h4>
@@ -62,15 +63,18 @@
     </div>
   </section>
 
-  <section>
-    <h3>Algumas das especialidades dos profissionais cadastrados em nosso sistema</h3>
+  <section id="section3">
+    <h3>
+      Algumas das especialidades dos profissionais cadastrados em nosso
+      sistema
+    </h3>
     <div></div>
   </section>
 
 
   <footer>
     <section class="testfooter">
-    <img src="./assets/images/Logotipo.svg" alt="Logotipo LifeCare">
+    <img src="./assets/images/Logotipo.svg" alt="Logotipo LifeCare" />
     <div class="footerprivacy">
       <p><strong>Privacidade</strong></p>
       <p>Política de cookies</p>

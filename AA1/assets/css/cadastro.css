@@ -1,0 +1,15 @@
+body{
+  background-color: var(--background);
+}
+
+.main-frame{
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapper-conteudo{
+  height: calc(100vh - 20rem) ;
+  color: var(--primary-300);
+  width: 60%;
+  gap: 1.6rem;
+}

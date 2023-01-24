@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 .button-primary{
   background-color: var(--primary-300);
   color: var(--white);
@@ -8,10 +13,23 @@
   border: none;
   font-size: 1.4rem;
   cursor: pointer;
+  width: fit-content;
 }
 
 .button-primary:hover {
   opacity: 80%;
+}
+
+.button-secondary{
+  background-color: inherit;
+  border: 0.2rem solid var(--secondary);
+  border-radius: .8rem;
+  color: var(--secondary);
+  font-family: var(--font-roboto);
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .button-ternary {
@@ -21,11 +39,11 @@
   border: none;
   cursor: pointer;
   font-size: 1.4rem;
-  padding: 1.6rem 3.2rem;
+  padding: .8rem 3.2rem;
 }
 
 @media screen and (max-width: 1000px){
-  .button-primary, .button-ternary{
+  .button-primary, .button-secondary, .button-ternary{
     padding: .8rem 1.6rem;
   }
 }
