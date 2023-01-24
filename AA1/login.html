@@ -27,11 +27,11 @@
     <img class="wrapper-img" src="./assets/images/Check_amico.svg" alt="Ilustração de uma médica realizando exames">
     <div class="wrapper-login-cadastro">
       <h2>Entre com sua conta</h2>
-      <form class="form-login" action="">
-        <input class="text-input" type="text" placeholder="E-mail">
-        <input class="text-input" type="text" placeholder="Senha">
-        <input class="button-primary" type="submit">
-      </form>
+      <div class="form-login">
+        <input id="email" class="text-input" type="email" placeholder="E-mail">
+        <input id="senha" class="text-input" type="password" placeholder="Senha">
+        <input class="button-primary" type="submit" onclick="verificaLogin()">
+      </div>
       <div class="wrapper-cadastro">
         <div class="wrapper-titulo">
           <h2>Ainda não possui uma conta?</h2>
@@ -45,5 +45,7 @@
     </div>
   </main>
 </body>
+
+<script src="login.js"></script>
 
 </html>
