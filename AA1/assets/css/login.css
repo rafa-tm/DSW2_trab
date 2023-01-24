@@ -9,6 +9,7 @@ body{
   height: calc(100vh - 20rem) ;
   color: var(--primary-300);
   text-align: center;
+  height: max-content;
 }
 
 .wrapper-img{

@@ -1,5 +1,5 @@
 .wrapper_section1 {
-  height: 80vh;
+  height: max(85vh, max-content);
   width: auto;
   display: flex;
   padding: 3.2rem 3.2rem;
