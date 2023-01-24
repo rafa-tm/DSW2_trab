@@ -8,11 +8,10 @@
 
   <link rel="icon" type="svg" href="./assets/images/Simbolo.svg" />
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/global.css" />
-  <link rel="stylesheet" href="./assets/css/index.css" />
   <link rel="stylesheet" href="./assets/css/components/header.css" />
   <link rel="stylesheet" href="./assets/css/components/buttons.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
 </head>
 
 <body>
@@ -20,20 +19,14 @@
   <header class="header">
     <img src="./assets/images/Logotipo.svg" alt="Logotipo LifeCare" />
     <div class="header__options header__options-show">
-      <button class="button-ternary anchor">
-        <a href="">Como Funciona</a>
-      </button>
-      <button class="button-ternary anchor">
-        <a href="">Especialidades</a>
-      </button>
-      <button class="button-primary">
-        <a href=""> Entrar ou Cadastrar </a>
-      </button>
+      <a href="#section2"><button class="button-ternary anchor">Como Funciona</button></a>
+      <a href="#section3"><button class="button-ternary anchor">Especialidades</button></a>
+      <a href="/login.html"><button class="button-primary">Entrar ou Cadastrar</button></a>
     </div>
   </header>
 
   <!-- Sessão 1 -->
-  <section class="wrapper_session1">
+  <section class="wrapper_section1">
     <div class="wrapper__call">
       <h2>Agende sua consulta agora mesmo!</h2>
       <p>
@@ -46,7 +39,7 @@
   </section>
 
   <!-- Sessão 2 -->
-  <section class="wrapper_session2">
+  <section class="wrapper_section2" id="section2">
     <div class="wrapper__titulo">
       <h1>Como funciona?</h1>
       <h4>Muito simples.</h4>
@@ -70,7 +63,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="section3">
     <h3>
       Algumas das especialidades dos profissionais cadastrados em nosso
       sistema
