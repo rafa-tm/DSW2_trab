@@ -1,4 +1,5 @@
 .wrapper_session1 {
+  height: 80vh;
   width: auto;
   display: flex;
   padding: 3.2rem 3.2rem;
@@ -65,20 +66,32 @@
   color: var(--white);
 }
 
+@media screen and (max-width: 1000px) {
+  .wrapper_session1 {
+    font-size: 1.6rem;
+  }
+}
 @media screen and (max-width: 650px) {
   .wrapper_session1 {
+    height: 60vh;
     font-size: 1.4rem;
-    justify-content: unset;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .wrapper__call {
     width: 100%;
     padding: 3.2rem;
   }
+  .wrapper_session1 img {
+    min-width: 250px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .wrapper_session1 .wrapper_session2 {
+  .wrapper_session1 {
     font-size: 1.4rem;
+    height: 40vh;
+    justify-content: space-around;
   }
 
   .wrapper_session1 img {
