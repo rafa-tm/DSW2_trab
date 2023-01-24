@@ -76,8 +76,23 @@
   }
 }
 
+.testfooter {
+  background-color: var(--primary-300);
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.footerprivacy{
+  text-align: center;
+  flex-direction: column;
+}
+
+.footeraddress{
+  text-align: right;
+}
+
 @media screen and (max-width: 480px) {
-  .wrapper_session1 .wrapper_session2 {
+  .wrapper_session1 .wrapper_session2 .testfooter .footerprivacy .footeraddress {
     font-size: 1.4rem;
   }
 
@@ -89,4 +104,5 @@
     flex-direction: column;
     gap: 2.4rem;
   }
+
 }
