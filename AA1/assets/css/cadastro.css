@@ -5,11 +5,23 @@ body{
 .main-frame{
   display: flex;
   justify-content: space-around;
+  height: calc(100vh - 10rem);
 }
 
 .wrapper-conteudo{
-  height: calc(100vh - 20rem) ;
+  padding-top: 6.4rem;
+  height: max-content;
   color: var(--primary-300);
-  width: 60%;
+  width: 55%;
+}
+
+.wrapper-conteudo h2{
+  margin-bottom: 2.4rem;
+}
+
+.form-cadastro{
+  display: flex;
+  flex-direction: column;
+  
   gap: 1.6rem;
 }
