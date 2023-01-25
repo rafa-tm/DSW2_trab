@@ -87,8 +87,38 @@
   }
 }
 
+.testfooter {
+  background-color: var(--primary-300);
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.footerprivacy{
+  text-align: center;
+  flex-direction: column;
+}
+
+.footeraddress{
+  text-align: right;
+}
+
+.testfooter {
+  background-color: var(--primary-300);
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.footerprivacy{
+  text-align: center;
+  flex-direction: column;
+}
+
+.footeraddress{
+  text-align: right;
+}
+
 @media screen and (max-width: 480px) {
-  .wrapper_section1 {
+  .wrapper_section1 .testfooter .footerprivacy .footeraddress {
     font-size: 1.4rem;
     height: 40vh;
     justify-content: space-around;
@@ -102,4 +132,5 @@
     flex-direction: column;
     gap: 2.4rem;
   }
+
 }
