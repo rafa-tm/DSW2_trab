@@ -1,5 +1,5 @@
 .text-input{
-  background-color: inherit;
+  background: transparent;
   font-family: var(--font-roboto);
   font-size: 1.6rem;
   font-weight: 500;
@@ -7,6 +7,11 @@
   border: 0.2rem solid var(--primary-300);
   border-radius: .8rem;
   width: 100%;
+}
+
+.input-label{
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1000px){
