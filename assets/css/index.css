@@ -1,8 +1,8 @@
 .wrapper_section1 {
-  height: max(85vh, max-content);
+  height: max-content;
   width: auto;
   display: flex;
-  padding: 3.2rem 3.2rem;
+  padding: 14rem 3.2rem;
   font-size: 2rem;
   align-items: center;
   justify-content: space-evenly;
@@ -29,7 +29,7 @@
   flex-direction: column;
   align-items: center;
   padding: 4.8rem;
-  gap: 3.2rem;
+  gap: 5.6rem;
 }
 
 .wrapper__titulo {
@@ -41,30 +41,46 @@
   color: var(--white);
 }
 
-.wrapper__cards {
+.wrapper__steps {
   display: flex;
-  gap: 2.4rem;
+  flex-direction: column;
+  gap: 4.8rem;
+  width: 60%;
 }
 
-.card {
+.step {
   background-color: var(--primary-200);
-  border-radius: 4.8rem;
-  padding: 3.2rem;
+  border-radius: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  gap: 2.4rem;
+  width: 100%;
+  height: max-content;
+  box-shadow: 4px 0 20px #00000044;
+}
+
+.step_title {
+  background-color: var(--primary-300);
+  padding: 4.8rem 4rem;
+  border-radius: 1.6rem;
+  font-size: 2.4rem;
+}
+
+.step_text {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: auto;
+  gap: 2.4rem;
+  font-size: 2rem;
+  padding: 2rem;
 }
 
-.card h2 {
-  margin-top: -4.8rem;
-  background-color: var(--primary-300);
-  width: 6rem;
-  height: 6rem;
-  border-radius: 10rem;
-  text-align: center;
-  color: var(--white);
+.step_text p {
+  font-weight: 300;
 }
+
 .footergeneral {
   background-color: var(--primary-300);
   font-size: 2rem;
@@ -101,7 +117,16 @@
 @media screen and (max-width: 1000px) {
   .wrapper_section1 {
     font-size: 1.6rem;
+    padding: 12rem 3.2rem;
   }
+
+  .wrapper__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 80%;
+  }
+
   .footergeneral {
     font-size: 1.6rem;
   }
@@ -110,6 +135,7 @@
     min-width: 250px;
   }
 }
+
 @media screen and (max-width: 650px) {
   .wrapper_section1,
   .wrapper_section2 {
@@ -117,6 +143,7 @@
     font-size: 1.4rem;
     flex-direction: column;
     justify-content: space-around;
+    padding: 10rem 3.2rem;
   }
 
   .wrapper__call {
@@ -129,6 +156,25 @@
 
   .wrapper__titulo {
     font-size: 1.6rem;
+  }
+
+  .step {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .step_title {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 2.4rem 3.6rem;
+    border-radius: 100%;
+    margin-top: -3.2rem;
+  }
+
+  .step_text {
+    font-size: 1.6rem;
+    text-align: center;
   }
 
   .footergeneral {
@@ -153,9 +199,23 @@
     display: none;
   }
 
-  .wrapper__cards {
-    flex-direction: column;
-    gap: 2.4rem;
+  .wrapper__steps {
+    gap: 5.6rem;
+  }
+  .step {
+    gap: 0;
+  }
+
+  .step_title {
+    font-size: 1.4rem;
+    padding: 2.4rem 3.2rem;
+    margin-top: -3.2rem;
+    border-radius: 100%;
+  }
+
+  .step_text {
+    font-size: 1.4rem;
+    text-align: center;
   }
 
   .footergeneral {
