@@ -76,7 +76,6 @@
   align-items: center;
   padding: 4.8rem;
   min-height: 25vh;
-
 }
 
 .footergeneral > div {
@@ -112,18 +111,24 @@
   }
 }
 @media screen and (max-width: 650px) {
-  .wrapper_section1 {
+  .wrapper_section1,
+  .wrapper_section2 {
     height: max-content;
     font-size: 1.4rem;
     flex-direction: column;
     justify-content: space-around;
   }
+
   .wrapper__call {
     width: 100%;
     padding: 3.2rem;
   }
   .wrapper_section1 img {
     min-width: 250px;
+  }
+
+  .wrapper__titulo {
+    font-size: 1.6rem;
   }
 
   .footergeneral {
@@ -138,9 +143,9 @@
 }
 
 @media screen and (max-width: 570px) {
-  .wrapper_section1 {
+  .wrapper_section1,
+  .wrapper_section2 {
     font-size: 1.4rem;
-    height: 40vh;
     justify-content: space-around;
   }
 
@@ -161,4 +166,3 @@
     min-width: 100px;
   }
 }
-

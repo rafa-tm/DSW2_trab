@@ -3,13 +3,13 @@ a {
   color: var(--white);
 }
 
-.button-primary{
+.button-primary {
   background-color: var(--primary-300);
   color: var(--white);
   font-family: var(--font-roboto);
   font-weight: 500;
   padding: 1.6rem 3.2rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   border: none;
   font-size: 1.4rem;
   cursor: pointer;
@@ -20,10 +20,10 @@ a {
   opacity: 80%;
 }
 
-.button-secondary{
+.button-secondary {
   background-color: inherit;
   border: 0.2rem solid var(--secondary);
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   color: var(--secondary);
   font-family: var(--font-roboto);
   font-weight: 600;
@@ -39,17 +39,37 @@ a {
   border: none;
   cursor: pointer;
   font-size: 1.4rem;
-  padding: .8rem 3.2rem;
+  padding: 0.8rem 3.2rem;
 }
 
-@media screen and (max-width: 1000px){
-  .button-primary, .button-secondary, .button-ternary{
-    padding: .8rem 1.6rem;
+.with_icon {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.with_icon i {
+  font-size: 1.8rem;
+}
+
+.only-icon {
+  padding: 0.8rem 2.4rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .button-primary,
+  .button-secondary,
+  .button-ternary {
+    padding: 0.8rem 1.6rem;
   }
 }
 
-@media screen and (max-width: 400px){
-  .button-primary, .button-ternary{
+@media screen and (max-width: 400px) {
+  .button-primary,
+  .button-ternary {
     font-size: 1.2rem;
+  }
+  .only-icon {
+    padding: 0.2rem 0.8rem;
   }
 }
