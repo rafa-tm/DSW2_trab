@@ -75,6 +75,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 4.8rem;
+  min-height: 25vh;
 
 }
 
@@ -136,7 +137,6 @@
   }
 }
 
-
 @media screen and (max-width: 480px) {
   .wrapper_section1  {
     font-size: 1.4rem;
@@ -153,15 +153,12 @@
     gap: 2.4rem;
   }
 
-  .footergeneral{
+  .footergeneral {
     font-size: 1.4rem;
   }
 
-  .footergeneral img{
-    min-width: 150px;
+  .footergeneral img {
+    min-width: 100px;
   }
-
 }
-
-
 
