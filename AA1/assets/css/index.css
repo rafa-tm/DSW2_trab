@@ -111,7 +111,7 @@
 }
 @media screen and (max-width: 650px) {
   .wrapper_section1 {
-    height: 60vh;
+    height: max-content;
     font-size: 1.4rem;
     flex-direction: column;
     justify-content: space-around;
