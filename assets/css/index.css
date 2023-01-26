@@ -9,7 +9,7 @@
 }
 
 .wrapper_section1 img {
-  width: 35%;
+  width: 30%;
 }
 
 .wrapper__call {
@@ -79,6 +79,28 @@
 
 .step_text p {
   font-weight: 300;
+  text-align: center;
+}
+
+.wrapper_section3 {
+  background-color: var(--white);
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 6rem;
+  gap: 4.8rem;
+}
+
+.wrapper_section3 h2 {
+  text-align: center;
+}
+
+.wrapper__slider {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  min-width: 45.5rem;
 }
 
 .footergeneral {
@@ -138,7 +160,8 @@
 
 @media screen and (max-width: 650px) {
   .wrapper_section1,
-  .wrapper_section2 {
+  .wrapper_section2,
+  .wrapper_section3 {
     height: max-content;
     font-size: 1.4rem;
     flex-direction: column;
@@ -190,7 +213,8 @@
 
 @media screen and (max-width: 570px) {
   .wrapper_section1,
-  .wrapper_section2 {
+  .wrapper_section2,
+  .wrapper_section3 {
     font-size: 1.4rem;
     justify-content: space-around;
   }

@@ -10,9 +10,11 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/global.css" />
   <link rel="stylesheet" href="./assets/css/components/header.css" />
   <link rel="stylesheet" href="./assets/css/components/buttons.css" />
+  <link rel="stylesheet" href="./assets/css/components/slider.css" />
   <link rel="stylesheet" href="./assets/css/index.css" />
 </head>
 
@@ -77,12 +79,43 @@
     </div>
   </section>
 
-  <section id="section3">
-    <h3>
-      Algumas das especialidades dos profissionais cadastrados em nosso
-      sistema
-    </h3>
-    <div></div>
+  <section class="wrapper_section3" id="section3">
+    <div class="">
+      <h2>
+        Algumas das especialidades dos profissionais cadastrados em nosso
+        sistema
+      </h2>
+    </div>
+    <div class="wrapper__slider">
+      <div class="container">
+        <button class="arrow-left control"><i class="material-icons">arrow_back</i></button>
+        <div class="gallery-wrapper">
+          <div class="gallery">
+            <div class="item current-item">
+              <img src="./assets/images/Cardiologist-pana.png" alt="">
+              <p>Cardiologista</p>
+            </div>
+            <div class="item current-item">
+              <img src="./assets/images/Gynecology consultation-pana.png" alt="">
+              <p>Ginecologista</p>
+            </div>
+            <div class="item current-item">
+              <img src="./assets/images/Medical prescription-pana.png" alt="">
+              <p>Clinico geral</p>
+            </div>
+            <div class="item current-item">
+              <img src="./assets/images/Pediatrician-pana.png" alt="">
+              <p>Pediatra</p>
+            </div>
+            <div class="item current-item">
+              <img src="./assets/images/Rhinoplasty-pana.png" alt="">
+              <p>Dermatologista</p>
+            </div>
+          </div>
+        </div>
+        <button class="arrow-right control"><i class="material-icons">arrow_forward</i></button>
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -103,5 +136,6 @@
     </div>
   </footer>
 </body>
+<script src="slider.js"></script>
 
 </html>
