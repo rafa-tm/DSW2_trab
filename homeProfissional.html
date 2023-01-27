@@ -23,7 +23,48 @@
   <link rel="stylesheet" href="./assets/css/home.css" />
 </head>
 <body>
-  <h1>OI PROFISSIONAL</h1>
-</body>
-
+  <!-- Cabeçalho -->
+  <header class="header">
+    <img src="./assets/images/Logotipo.svg" alt="Logotipo LifeCare" />
+    <div class="header__options header__options-show">
+      <a href="/login.html"><button class="button-primary with_icon"><i
+        class="material-icons">person</i>Perfil</button></a>
+    </div>
+    </header>
+    <main class="main-frame">
+        <form action="/index.html">
+          <div class="input-icons">
+            <i class="material-icons icon">search</i>
+            <input id="nome" class="input-field" type="text" placeholder="Buscar profissional por nome">
+            </div>
+        </div>
+      <div class="filtersgeneral">
+        <div class="filtertext">
+          <p>Filtre os profissionais por área de atuação e/ou especialidade</p>
+        </div>
+        <div class="input-icons">
+          <i class="material-icons icon">mediation</i>
+          <input id="area" class="area" type="text" placeholder="Área">
+      </div>
+      <div class="input-icons">
+        <i class="material-icons icon">medical_information</i>
+        <input id="especialidade" class="especialidade" type="text" placeholder="Especialidade">
+    </div>
+        <div>
+          <a href=""><button class="aplicar_filtro">Aplicar filtro</button></a>
+        </div>
+      </div>
+    </form>
+    <div class="card">
+      <div class="box_title">
+      <h2><strong>Rafael Tury Minatel</strong></h2>
+      </div>
+      <div class="box_info">
+        <p>Área de atendimento: <strong>Ortopedista</strong></p>
+        <p>Especialidade: <strong>Trauma</strong></p>
+    </div>
+      </div>
+    </div>
+    </main>
+  </body>
 </html>
