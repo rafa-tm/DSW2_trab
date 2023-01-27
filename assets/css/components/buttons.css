@@ -1,6 +1,15 @@
 a {
   text-decoration: none;
   color: var(--white);
+  user-select: none;
+}
+
+i {
+  user-select: none;
+}
+
+a:focus-visible {
+  outline: none;
 }
 
 .button-primary {
@@ -20,8 +29,12 @@ a {
   opacity: 80%;
 }
 
+.button-primary:focus-visible {
+  outline: 0.2rem solid var(--primary-100);
+}
+
 .button-secondary {
-  background-color: inherit;
+  background-color: transparent;
   border: 0.2rem solid var(--secondary);
   border-radius: 0.8rem;
   color: var(--secondary);
@@ -32,6 +45,14 @@ a {
   cursor: pointer;
 }
 
+.button-secondary:hover {
+  background-color: var(--secondary_opacity);
+}
+
+.button-secondary:focus-visible {
+  outline: 0.2rem solid var(--secondary);
+}
+
 .button-ternary {
   background-color: unset;
   color: var(--white);
@@ -40,6 +61,11 @@ a {
   cursor: pointer;
   font-size: 1.4rem;
   padding: 0.8rem 3.2rem;
+}
+
+.button-ternary:focus-visible {
+  outline: none;
+  text-decoration: underline double var(--primary-100);
 }
 
 .with_icon {

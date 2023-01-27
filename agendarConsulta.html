@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+
+  <link rel="icon" type="svg" href="./assets/images/Simbolo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/global.css" />
+  <link rel="stylesheet" href="./assets/css/components/header.css" />
+  <link rel="stylesheet" href="./assets/css/components/buttons.css" />
+  <link rel="stylesheet" href="./assets/css/components/inputs.css" />
+  <link rel="stylesheet" href="./assets/css/agendar.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <a href="/homeCliente.html" class="button-ternary"><i class="material-icons">arrow_back_ios</i></a>
+    <img src="./assets/images/Logotipo.svg" alt="Logotipo LifeCare" />
+  </header>
+
+  <main class="main-frame">
+    <div class="review">
+      <h2>Agendar consulta com o profissional:</h2>
+      <div class="review_infos">
+        <div class="dados">
+          <p>Profissional:</p>
+          <strong>Luiz Fernando de Oliveira</strong>
+        </div>
+        <div class="outros_dados">
+          <div class="dados">
+            <p>Área:</p>
+            <strong>Ortopedia</strong>
+          </div>
+          <div class="dados">
+            <p>Especialidade:</p>
+            <strong>Trauma</strong>
+          </div>
+          <div class="dados">
+            <p>Contato:</p>
+            <strong>(16) 998001122</strong>
+          </div>
+          <div class="dados">
+            <p>Email:</p>
+            <strong>luiz.fernando@email.com</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="agendar">
+      <label>Data desejada para a consulta:</label>
+      <input class="datelocal-input" type="datetime-local" name="dataConsulta" id="dataConsulta">
+      <a href="/homeCliente.html"><button class="button-primary">Agendar</button></a>
+    </div>
+  </main>
+</body>
+
+<script src="login.js"></script>
+
+</html>

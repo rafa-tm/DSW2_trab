@@ -25,6 +25,21 @@
   font-weight: 400;
 }
 
+.datelocal-input {
+  background: transparent;
+  font-family: var(--font-roboto);
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.6rem;
+  border: 0.2rem solid var(--primary-300);
+  border-radius: 0.8rem;
+  width: 100%;
+}
+
+.datelocal-input i {
+  color: var(--secondary);
+}
+
 @media screen and (max-width: 1000px) {
   .text-input {
     padding: 0.8rem 1.6rem;
