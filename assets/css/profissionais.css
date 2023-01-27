@@ -134,37 +134,43 @@
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .card {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .filtersgeneral {
+    gap: 1.6rem;
+    margin: 3.2rem 4.8rem;
+    flex-direction: column;
+  }
+  .box_general {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .header {
     flex-direction: row;
-    gap: 20rem;
-    width: 100%;
-    justify-content: space-between;
   }
 
-  .box_title{
-    display: flex;
+  .box_title h2,
+  .box_info {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .filtersgeneral {
+    gap: 1.6rem;
+    margin: 1.6rem 0.8rem;
     flex-direction: column;
-    margin-bottom: 1.6rem;
-  }
-  .box_info{
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
   }
 
-  @media screen and (max-width: 1400px){
-    .filtersgeneral{
-      font-size: 1.4rem;
-    }
+  .icon {
+    display: none;
   }
-
-  @media screen and (max-width: 1000px) {
-    .filtersgeneral {
-      grid-template-columns: 1fr 1fr;
-      gap: 2.4rem;
-      margin: 3.2rem 4.8rem;
-      flex-direction: column;
-    }
-  }
+}
