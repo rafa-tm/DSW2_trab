@@ -109,10 +109,16 @@
     
   }
 
+  .box_general{
+    display: flex;
+    flex-direction: row;
+    gap: 20rem;
+  }
+
   .box_title{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    margin-bottom: 1.6rem;
   }
   .box_info{
     font-size: 2rem;
