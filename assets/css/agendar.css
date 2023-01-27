@@ -1,0 +1,107 @@
+.main-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: max-content;
+  padding-top: 3.2rem;
+  gap: 5.6rem;
+  margin: 0 10%;
+  color: var(--primary-300);
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 60%;
+  font-size: 1.8rem;
+}
+
+.review_infos {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
+  margin: 0 3.2rem;
+}
+
+.outros_dados {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.8rem 4rem;
+}
+
+.dados {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4rem;
+  width: 100%;
+  margin-bottom: 0.4rem;
+}
+
+.agendar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5.6rem;
+}
+
+.agendar input[type="datetime-local"] {
+  width: max-content;
+}
+
+.agendar label {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+  .review {
+    gap: 3.2rem;
+    width: 85%;
+  }
+  .review h2 {
+    text-align: center;
+  }
+  .review_infos {
+    margin: 0 2.4rem;
+  }
+  .outros_dados {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    flex-direction: row;
+  }
+  .review {
+    font-size: 1.4rem;
+  }
+  .agendar label {
+    font-size: 1.6rem;
+  }
+
+  .agendar {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-frame {
+    gap: 5.6rem;
+    margin: 0;
+  }
+  .review {
+    gap: 2.4rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .dados {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
