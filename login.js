@@ -3,10 +3,10 @@ function verificaLogin() {
   const senha = document.getElementById("senha").value;
 
   if (email == "cliente@email.com" && senha == "1234") {
-    window.location.href = "/homeCliente.html";
+    window.location.href = "/DSW2_trab/homeCliente.html";
   }
 
   if (email == "profissional@email.com" && senha == "1234") {
-    window.location.href = "/homeProfissional.html";
+    window.location.href = "/DSW2_trab/homeProfissional.html";
   }
 }
